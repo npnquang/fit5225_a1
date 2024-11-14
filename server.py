@@ -70,6 +70,11 @@ def detect():
     }
     return jsonify(response)
 
+
+@app.route("/")
+def index():
+    return "<h1>Hello<h1>"
+
 if __name__ == '__main__':
     # Start Flask server on a port over 1024
     app.run(threaded=True)
